@@ -1,0 +1,111 @@
+<!-- res/layout/activity_survey.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SurveyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. What is your current program of study?" />
+
+        <EditText
+            android:id="@+id/editProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your program"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. How satisfied are you with the courses offered?" />
+
+        <RatingBar
+            android:id="@+id/ratingCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. What improvements would you suggest for the course content?" />
+
+        <EditText
+            android:id="@+id/editContentImprovement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your suggestions"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Do you feel your field of study adequately prepares you for your future career?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+
+            <RadioButton
+                android:id="@+id/radioNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. What type of courses would you like to see more of in your program?"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioCoursesProgramming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programming"/>
+
+            <RadioButton
+                android:id="@+id/radioCoursesDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design"/>
+
+            <RadioButton
+                android:id="@+id/radioCoursesBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

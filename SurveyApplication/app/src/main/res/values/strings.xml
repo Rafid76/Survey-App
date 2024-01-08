@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SurveyApp</string>
+    <string name="welcome_message">Welcome to the Student Survey!</string>
+    <string name="start_survey">Start Survey</string>
+    <string name="question_program">1. What is your current program of study?</string>
+    <string name="question_satisfaction">2. How satisfied are you with the courses offered?</string>
+    <string name="question_improvements">3. What improvements would you suggest for the course content?</string>
+    <string name="question_field_study">4. Do you feel your field of study adequately prepares you for your future career?</string>
+    <string name="question_courses">5. What type of courses would you like to see more of in your program?</string>
+    <string name="submit">Submit</string>
+    <string name="thank_you_message">Thank you for your feedback!</string>
+</resources>
